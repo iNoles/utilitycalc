@@ -1,42 +1,57 @@
-# sv
+# UtilityCalc — Simple Everyday Calculators
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+![SvelteKit](https://img.shields.io/badge/Framework-SvelteKit-FF3E00?logo=svelte&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/Styled_with-TailwindCSS-38BDF8?logo=tailwindcss&logoColor=white)
+![Bun](https://img.shields.io/badge/Runtime-Bun-000000?logo=bun&logoColor=white)
+![GitHub Pages](https://img.shields.io/badge/Hosting-GitHub_Pages-181717?logo=github&logoColor=white)
+![Build Status](https://img.shields.io/github/actions/workflow/status/iNoles/utilitycalc/main.yml?label=Build)
+![License](https://img.shields.io/github/license/iNoles/utilitycalc)
 
-## Creating a project
+UtilityCalc is a collection of clean, fast, and mobile‑friendly calculators built with SvelteKit 2, Tailwind CSS v4, and Bun. The suite includes tools for gas mileage, fuel savings comparison, amortization, and BAC estimation, all deployed as a fully static site on GitHub Pages.
 
-If you're seeing this, you've probably already done this step. Congrats!
+## Features
 
-```sh
-# create a new project
-npx sv create my-app
-```
+- Responsive layout with a unified header and mobile navigation
+- Fully static prerendering using @sveltejs/adapter-static
+- Correct base‑path routing for GitHub Pages
+- Bun‑powered development and build workflow
+- Clean, accessible UI with consistent component styling
 
-To recreate this project with the same configuration:
+## Tech Stacks
 
-```sh
-# recreate this project
-bun x sv@0.12.6 create --template minimal --types ts --add prettier tailwindcss="plugins:none" --install bun UtilityCalc
-```
+- SvelteKit 2 for routing and application structure
+- Tailwind CSS v4 for styling
+- Bun for fast installs and builds
+- GitHub Actions for CI and deployment
+- GitHub Pages for hosting
 
-## Developing
+### Installation
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+1. Clone the repository:
 
-```sh
-npm run dev
+   ```bash
+   git clone https://github.com/iNoles/utilitycalc.git
+   cd utilitycalc
+   ```
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+2. Install dependencies using bun:
 
-## Building
+   ```bash
+   bun install
+   ```
 
-To create a production version of your app:
+### Available Scripts
 
-```sh
-npm run build
-```
+- `bun dev`: Start the development server.
+- `bun build`: Create a production build.
+- `bun preview`: Preview the production build.
 
-You can preview the production build with `npm run preview`.
+### Contributing
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+Contributions are welcome! Here's how you can help:
+
+1. Fork the repository.
+2. Create your feature branch (`git checkout -b feature/YourFeature`).
+3. Commit your changes (`git commit -m 'Add YourFeature'`).
+4. Push to the branch (`git push origin feature/YourFeature`).
+5. Open a pull request.
