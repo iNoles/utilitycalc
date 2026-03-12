@@ -4,6 +4,7 @@
 
   let { children } = $props();
   let mobileOpen = $state(false);
+  export const prerender = true;
 </script>
 
 <svelte:head>
