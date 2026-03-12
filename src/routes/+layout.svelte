@@ -16,7 +16,7 @@
   <header class="bg-white border-b border-gray-200">
     <div class="max-w-4xl mx-auto px-6 py-4 flex items-center justify-between">
 
-      <a href="/" class="text-2xl font-semibold tracking-tight text-gray-900">
+      <a href="{base}" class="text-2xl font-semibold tracking-tight text-gray-900">
         UtilityCalc
       </a>
 
