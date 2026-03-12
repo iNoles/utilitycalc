@@ -1,10 +1,11 @@
 <script>
   const calculators = [
-    { name: "Gas Mileage Calculator", path: "/gas-mileage", desc: "Calculate miles per gallon based on miles driven and fuel used." },
-    { name: "Loan Amortization Calculator", path: "/amortization", desc: "Estimate monthly payments, total cost, and interest paid." },
-    { name: "BAC Calculator", path: "/bac", desc: "Estimate blood alcohol concentration based on drinks, weight, and time." },
-    { name: "Fuel Savings Comparison", path: "/fuel-comparison", desc: "Compare yearly fuel costs between two vehicles." }
+    { name: "Gas Mileage Calculator", path: "gas-mileage", desc: "Calculate miles per gallon based on miles driven and fuel used." },
+    { name: "Loan Amortization Calculator", path: "amortization", desc: "Estimate monthly payments, total cost, and interest paid." },
+    { name: "BAC Calculator", path: "bac", desc: "Estimate blood alcohol concentration based on drinks, weight, and time." },
+    { name: "Fuel Savings Comparison", path: "fuel-comparison", desc: "Compare yearly fuel costs between two vehicles." }
   ];
+
 </script>
 
 <div class="space-y-12">
