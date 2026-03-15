@@ -3,7 +3,8 @@
     { name: "Gas Mileage Calculator", path: "gas-mileage", desc: "Calculate miles per gallon based on miles driven and fuel used." },
     { name: "Loan Amortization Calculator", path: "amortization", desc: "Estimate monthly payments, total cost, and interest paid." },
     { name: "BAC Calculator", path: "bac", desc: "Estimate blood alcohol concentration based on drinks, weight, and time." },
-    { name: "Fuel Savings Comparison", path: "fuel-comparison", desc: "Compare yearly fuel costs between two vehicles." }
+    { name: "Fuel Savings Comparison", path: "fuel-comparison", desc: "Compare yearly fuel costs between two vehicles." },
+    { name: "Pace Calculator", path: "pace", desc: "Calculate running pace, total time, or distance for your runs." }
   ];
 
 </script>

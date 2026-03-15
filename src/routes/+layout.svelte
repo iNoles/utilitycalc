@@ -21,10 +21,11 @@
       </a>
 
       <nav class="hidden sm:flex gap-6 text-sm font-medium text-gray-700">
-        <a href="{base}/gas-mileage" class="hover:text-gray-900">Gas Mileage</a>
-        <a href="{base}/fuel-comparison" class="hover:text-gray-900">Fuel Savings</a>
-        <a href="{base}/amortization" class="hover:text-gray-900">Amortization</a>
-        <a href="{base}/bac" class="hover:text-gray-900">BAC</a>
+        <a href="gas-mileage" class="hover:text-gray-900">Gas Mileage</a>
+        <a href="fuel-comparison" class="hover:text-gray-900">Fuel Savings</a>
+        <a href="amortization" class="hover:text-gray-900">Amortization</a>
+        <a href="bac" class="hover:text-gray-900">BAC</a>
+        <a href="pace" class="hover:text-gray-900">Pace</a>
       </nav>
 
       <button
@@ -42,10 +43,11 @@
 
     {#if mobileOpen}
       <nav class="sm:hidden bg-white border-t border-gray-200 px-6 py-4 space-y-3 text-gray-700 text-base">
-        <a href="{base}/gas-mileage" class="block hover:text-gray-900">Gas Mileage</a>
-        <a href="{base}/fuel-comparison" class="block hover:text-gray-900">Fuel Savings</a>
-        <a href="{base}/amortization" class="block hover:text-gray-900">Amortization</a>
-        <a href="{base}/bac" class="block hover:text-gray-900">BAC</a>
+        <a href="gas-mileage" class="block hover:text-gray-900">Gas Mileage</a>
+        <a href="fuel-comparison" class="block hover:text-gray-900">Fuel Savings</a>
+        <a href="amortization" class="block hover:text-gray-900">Amortization</a>
+        <a href="bac" class="block hover:text-gray-900">BAC</a>
+        <a href="pace" class="block hover:text-gray-900">Pace</a>
       </nav>
     {/if}
   </header>
