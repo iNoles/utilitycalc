@@ -4,7 +4,8 @@
     { name: "Loan Amortization Calculator", path: "amortization", desc: "Estimate monthly payments, total cost, and interest paid." },
     { name: "BAC Calculator", path: "bac", desc: "Estimate blood alcohol concentration based on drinks, weight, and time." },
     { name: "Fuel Savings Comparison", path: "fuel-comparison", desc: "Compare yearly fuel costs between two vehicles." },
-    { name: "Pace Calculator", path: "pace", desc: "Calculate running pace, total time, or distance for your runs." }
+    { name: "Pace Calculator", path: "pace", desc: "Calculate running pace, total time, or distance for your runs." },
+    { name: "Tip Calculator", path: "tip", desc: "Calculate tip amount, per‑person split, and total bill instantly." }
   ];
 
 </script>
@@ -21,7 +22,7 @@
 
   <!-- Calculator Grid -->
   <section>
-    <div class="grid gap-6 sm:grid-cols-2">
+    <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
       {#each calculators as calc}
         <a
           href={calc.path}
