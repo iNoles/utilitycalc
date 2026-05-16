@@ -1,5 +1,8 @@
 <script lang="ts">
   import TipCalculator from "$lib/TipCalculator.svelte";
+
+  // Enable runes in this file
+  let _ = $state(0);
 </script>
 
 <section class="space-y-4 mb-8">

@@ -1,0 +1,2 @@
+allowBuilds:
+  '@sveltejs/kit': true
