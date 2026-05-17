@@ -1,14 +1,14 @@
-<script>
+<script lang="ts">
   let weight = $state(0);
   let drinks = $state(0);
   let hours = $state(0);
-  let gender = $state("male");
+  let gender = $state<"male" | "female">("male");
 
-  const r = { male: 0.73, female: 0.66 };
+  const r: Record<"male" | "female", number> = { male: 0.73, female: 0.66 };
 
   let alcoholOz = $derived(drinks * 0.6);
 
-  let bac = $derived(
+  let bac: any = $derived(
     weight > 0 && drinks > 0
       ? (
           (alcoholOz * 5.14) / (weight * r[gender]) -

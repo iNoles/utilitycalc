@@ -1,22 +1,22 @@
-<script>
+<script lang="ts">
   let mpgCurrent = $state(0);
   let mpgNew = $state(0);
   let milesPerYear = $state(0);
   let fuelPrice = $state(0);
 
-  let costCurrent = $derived(
+  let costCurrent: any = $derived(
     mpgCurrent > 0
       ? ((milesPerYear / mpgCurrent) * fuelPrice).toFixed(2)
       : "—"
   );
 
-  let costNew = $derived(
+  let costNew: any = $derived(
     mpgNew > 0
       ? ((milesPerYear / mpgNew) * fuelPrice).toFixed(2)
       : "—"
   );
 
-  let savings = $derived(
+  let savings: any = $derived(
     costCurrent !== "—" && costNew !== "—"
       ? (costCurrent - costNew).toFixed(2)
       : "—"

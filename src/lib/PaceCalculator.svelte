@@ -36,7 +36,7 @@
   // Pure compute functions
   const computePace = () => {
     const total = toMinutes(timeMin, timeSec);
-    return distanceInMiles > 0 ? fromMinutes(total / distanceInMiles) : null;
+    return distanceInMiles() > 0 ? fromMinutes(total / distanceInMiles()) : null;
   };
 
   const computeTime = () => {
@@ -46,24 +46,19 @@
 
   const computeDistance = () => {
     const total = toMinutes(timeMin, timeSec);
-    return pacePerMile > 0 ? total / pacePerMile : null;
+    return pacePerMile() > 0 ? total / pacePerMile() : null;
   };
 
-  // Derived values
   let result = $derived(() => {
     if (mode === "pace") {
-      const r = computePace();
-      return r ?? { min: 0, sec: 0 };
+      return computePace() ?? { min: 0, sec: 0 };
     }
 
     if (mode === "time") {
-      const r = computeTime();
-      return r ?? { min: 0, sec: 0 };
+      return computeTime() ?? { min: 0, sec: 0 };
     }
 
-    // distance mode
-    const d = computeDistance();
-    return d ?? 0;
+    return { min: 0, sec: 0 };
   });
 
   // Convert distance result to selected unit

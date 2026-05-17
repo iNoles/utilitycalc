@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   let principal = $state(0);
   let rate = $state(0);
   let years = $state(0);
@@ -6,7 +6,7 @@
   let monthlyRate = $derived(rate > 0 ? rate / 100 / 12 : 0);
   let months = $derived(years * 12);
 
-  let monthlyPayment = $derived(
+  let monthlyPayment: any = $derived(
     principal > 0 && rate > 0 && years > 0
       ? (
           (principal * monthlyRate) /
@@ -15,7 +15,7 @@
       : "—"
   );
 
-  let totalPaid = $derived(
+  let totalPaid: any = $derived(
     monthlyPayment !== "—" ? (monthlyPayment * months).toFixed(2) : "—"
   );
 
